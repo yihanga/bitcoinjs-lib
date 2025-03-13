@@ -147,6 +147,7 @@ jobs:
         with:
           name: documentation
           path: ./docs  # 确保路径匹配
+      - run: ls -al ./docs  # 确保 artifact 下载成功
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
