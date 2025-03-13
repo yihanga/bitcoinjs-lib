@@ -142,7 +142,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build-doc
     steps:
-      - run: ls -al ./docs  # 确保 artifact 下载成功
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
